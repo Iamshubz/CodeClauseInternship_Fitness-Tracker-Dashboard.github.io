@@ -1,0 +1,455 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-sidebar {
+  width: 200px; /* adjust the width to fit your needs */
+  background-color: #ffffff;
+  color: #fff;
+  padding: 20px;
+}
+.menu-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.menu-icon img {
+  width: 20px;
+  height: 20px;
+  margin-top: 7px;
+}
+.right-sidebar {
+  width: 280px;
+  background-color: #ffffff;
+  color: #333; /* changed text color to black */
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* added box shadow */
+}
+.profile-section {
+  height: 240px;
+  width: 200px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  position: relative;
+  top: -40px; /* added negative top value to move the profile section up */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info {
+  margin-top: 20px;
+  text-align: center;
+  display: flex; /* added flexbox to align horizontally */
+  justify-content: space-between; /* added to align horizontally */
+}
+
+.profile-info p {
+  margin: 0; /* removed margin */
+}
+.calendar-section {
+  height: 230px;
+  width: 250px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  position: relative;
+  top: -10px; /* added negative top value to move the calendar section up */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.done-exercise {
+  background-color: #ff6b6b;
+  color: #fff;
+  border-radius: 50%;
+  padding: 5px;
+}
+.schedule-section {
+
+
+  padding: 10px;
+  border: 1px 
+  position: relative;
+  top:0px; /* added negative top value to move the schedule section up */
+
+}
+.schedule-item {
+  background-color: #f7f7f7;
+  width: 250px;
+  height: 50px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-item h4 {
+  margin-top: 0;
+}
+
+.schedule-item p {
+  margin-bottom: 10px;
+}
+
+.right-sidebar h3 {
+  text-align: center; /* added to center profile name */
+}
+.right-sidebar .header-icons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: right;
+}
+
+.right-sidebar .icon-group {
+  display: flex;
+}
+
+.right-sidebar .icon-group a {
+  margin: 0 10px;
+}
+
+.right-sidebar .bell-icon, .right-sidebar .msg-icon {
+  width: 25px;
+  height: 25px;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.fit-track {
+  font-size: 20px;
+  font-weight: bold;
+  color: #812806; /* blue color */
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.update {
+  margin-top: 30px;
+  background-color: #ff6b6b;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+header h1 {
+  font-size: 20px;
+}
+
+.search-notifications {
+  display: flex;
+  align-items: center;
+}
+
+.search-notifications input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.cards-overview {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.cards-overview .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px; /* adjust the width to fit your needs */
+  height: 60px; /* adjust the height to fit your needs */
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cards-overview .card img {
+  width: 60px; /* adjust the width to fit your needs */
+  height: 60px; /* adjust the height to fit your needs */
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.cards-overview .card span {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+}
+.activity-overview {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.activity-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 0px rgba(79, 77, 77, 0.1);
+}
+.activity-chart {
+  width: 500px; /* adjust the width to fit your needs */
+  height: 200px; /* adjust the height to fit your needs */
+}
+
+.today-overview {
+  width: 200px; /* adjust the width to fit your needs */
+  height: 200px; /* adjust the height to fit your needs */
+}
+
+.activity-card img {
+  width: 490px; /* adjust the width to fit your needs */
+  height: 170px; /* adjust the height to fit your needs */
+  object-fit: cover;
+  margin-bottom: 0px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+}
+.today-overview img {
+  width: 200px; /* adjust the width to fit your needs */
+  height: 170px; /* adjust the height to fit your needs */
+  object-fit: cover;
+  margin-bottom: 0px;
+}
+
+.activity-card span {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.recommended-food {
+  margin-top: 20px;
+}
+.food-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px; /* adjust the width to fit your needs */
+  height: 60px; /* adjust the height to fit your needs */
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* added even darker shadow */
+}
+.food-item img {
+  width: 60px; /* adjust the width to fit your needs */
+  height: 70px; /* adjust the height to fit your needs */
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.food-item .description {
+  flex-grow: 1;
+  padding: 15px;
+}.recommended-food .food-item {
+  position: relative;
+  padding-top: 40px; /* add some padding to make space for the h3 text */
+}
+
+.recommended-food .food-item h3 {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+}
+.food-item p {
+  position: absolute;
+  top: 50px;
+  right: 9px;
+  font-size: 12px;
+   color: #000;
+  margin: 0;
+}
+.popular-trainer {
+  margin-top: 20px;
+}
+
+.trainers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.trainer-box {
+  width: 150px;
+  height: 200px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(62, 58, 58, 0.635); /* added darker shadow */
+  text-align: center;
+}
+
+.trainer-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.view-all {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #f7f7f7;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.view-all a {
+  text-decoration: none;
+  color: #333;
+}
+
+.view-all a:hover {
+  color: #666;
+}
+.food-items, .trainers, .outputs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.food-item, .trainer, .output-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  clear: both;
+}/* Toggle sidebar */
+.sidebar.active {
+  transform: translateX(0);
+}
+
+/* Active navigation menu item */
+.sidebar ul li a.active {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Show/hide notifications */
+.notifications {
+  position: relative;
+}
+
+.notifications.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Calendar functionality */
+.calendar-section td {
+  cursor: pointer;
+}
+
+/* Schedule section */
+.schedule-item {
+  cursor: pointer;
+}
+
+.schedule-item.active {
+  background-color: #333;
+  color: #fff;
+}
+
+footer p {
+  margin-bottom: 0;
+}
